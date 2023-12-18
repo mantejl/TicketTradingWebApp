@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        .menu {
+            height: 20px;
+            color: white;
+            background-color: blue;
+        }
+
+        .menu__left {
+            float: left;
+            color: white;
+        }
+
+        .menu__right {
+            float: right;
+        }
+
+        .menu__right a {
+            color: white;
+        }
+
+        .search {
+
+            background-color: gray;
+        }
+
+        .line-1 {
+            height: 1px;
+            background: white;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+            padding: 10px;
+            font-size: x-small;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <span class="menu__left">
+            <lable>SalTickets</lable>
+        </span>
+
+        <span class="menu__right">
+            <a href="#home">Home</a>
+            <a href="#about">Favorites</a>
+            <a href="#contact">Wallet</a>
+            <a href="#news">Logout</a>
+            <a href="#news">Login/Sign Up</a>
+        </span>
+
+    </div>
+
+    <div style="margin-top: 10px;margin-left: 100px;">
+        <label> My Favorites</label>
+        <i id = "myStar" class="fa fa-star-o" style = "font-size:24px"></i>
+        <i class="fa fa-solid fa-caret-up" style="color: #008000;"></i>
+
+    </div>
+
+    <div style="margin-top: 10px;margin-bottom: 10px;margin-left: 100px;width: 600px;border: 1px solid #ccc ">
+        <label style="font-size: small;"> Maroon5:The Las Vegas Residency</label>
+        <span style="float: right;"><label>X</label></span><br>
+        <label style="font-size: x-small;"> 2023-03-24 20:0:00</label>
+        <span style="float: right;"><label>61.5-235.5</label></span>
+    </div>
+
+    <div style="margin-top: 10px;margin-bottom: 10px;margin-left: 100px;width: 600px;border: 1px solid #ccc ">
+        <label style="font-size: small;"> Maroon5:The Las Vegas Residency</label>
+        <span style="float: right;"><label>X</label></span><br>
+        <label style="font-size: x-small;"> 2023-03-24 20:0:00</label>
+        <span style="float: right;"><label>61.5-235.5</label></span>
+    </div>
+
+
+    <!-- <div style="margin-top: 10px;margin-left: 200px;">
+    <p> My Wallet </p>
+    <label style="font-size: small;">Cash Balance:</label>    
+    <label>$1789.50</label><br><br>
+    <label style="font-size: small;">Total Account Value :</label>
+    <label>$3000</label><br>
+</div>
+
+<div style="margin-top: 10px;margin-left: 200px; display: flex ; flex-direction : column; width: 400px; border: 1px solid #ccc;">
+    <div style="background: #f7f7f7 ;width: 400px">
+        <label style="margin-left: 10px;font-size: small;">Maroon 5: The Vegas Residency</label>
+    </div>
+
+    <div style="width: 500px; margin-top: 20px; margin-left: 70px;margin-bottom: 20px;">
+        <table >
+            <tr>
+                <td>Quantity</td>
+                <td>10</td>
+                <td>Change</td>
+                <td>461.70 </td>
+            </tr>
+            <tr>
+                <td>Avg Cost</td>
+                <td>10</td>
+                <td>Current Price</td>
+                <td>461.70 </td>
+            </tr>
+            <tr>
+                <td>Total Cost</td>
+                <td>10</td>
+                <td>Market Value</td>
+                <td>461.70 </td>
+            </tr>
+            </table>
+    </div>
+
+    <div style="background: #f7f7f7 ;width: 400px">
+        <label style="margin-left: 130px;font-size: small;">Quantity:</label>
+        <input style="width: 30px" type="input"></input><br>
+        <input style="margin-left: 130px;font-size: small; margin-top: 10px;" type="radio" id="Buy" name="BuySell" value="Buy">
+        <label style="font-size: x-small;" for="Buy">BUY</label>
+        <input type="radio" id="Sell" name="BuySell" value="Sell">
+        <label style="font-size: x-small; margin-bottom: 10px;" for="Sell">SELL</label><br>
+        <button style="margin-left: 130px;font-size: x-small; margin-top: 10px;margin-bottom:10px;width: 100px;">Submit</button>
+
+    </div>
+
+</div> -->
+
+    <!-- <div style="width: 500px; height: 250px; background: gray; margin:0 auto; margin-top: 100px; border-radius: 10px;">
+        <h2 style="text-align: center; color: white;">Events Search</h2>
+        <div class="line-1"></div>
+        <br/>
+        <label style="margin-left: 10px;color: blue;">Keyword*</label>
+        <br/>
+        <input style="margin-left: 10px;border: 1px;border-radius: 3px;width: 90%;" type="text">
+        <br/>
+        <br/>
+        <label style="margin-left: 10px;color: blue;" >Location*</label>
+        <br/>
+        <input style="margin-left: 10px;border: 1px;border-radius: 3px;width: 90%;" type="text">        
+
+        <button style="margin-left: 130px;  margin-top: 30px; color: white; font-size: large; background-color: darkorange;  ">SEARCH</button>
+</div>
+    
+    
+<div  style=" margin:0 auto;margin-top: 100px;text-align: center; width: 500px">
+    <table>
+        <tr>
+          <th>Date</th>
+          <th>Icon</th>
+          <th>Event</th>
+          <th>Venue</th>
+        </tr>
+        <tr>
+          <td>2023-06-03</td>
+          <td><img width="50" height="50" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/VJ0DGB6IoH7/ADNKdi2CQDtP7V9rq9Z0f4C/QTOz/iH+dpa4egmm3AYdSjAjTI36V1dTfaCX1CZ0te0rq6qSJKorWeFvksW1XQC0sD+zX2uq/YyyetfrBd64Sdatti2AAER6V1dSwnpzK4fvbD5V9rq6pnT/2Q=="></td>
+          <td>test</td>
+          <td>test</td>
+        </tr>
+        <tr>
+            <td>2023-06-03</td>
+            <td><img width="50" height="50" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/pnT/2Q=="></td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+    </table>
+</div>
+
+
+
+<div style="margin:0 auto; margin-top: 50px; background:gray ;border-radius: 10px; width: 700px">
+    <Span style="color: white; font-size: 30px; margin-left: 50px"><label>Marron 5: The Las Vegar residency</label> <label>*</label></Span>
+    <div style="display: flex; margin-top: 50px; margin-left: 50px">
+        <div style="display: flex">
+            <div>
+                <label style="color: cyan;font-size: 25px;">Date</label><br>
+                <label style="color: white;">2023-03-04 20:00:00</label> <br><br>
+                <label style="color: cyan;font-size: 25px;">Venue</label><br>
+                <label style="color: white;">Dolby Live</label> <br><br>
+                <label style="color: cyan;font-size: 25px;">Price Range</label><br>
+                <label style="color: white;">63.3 - 525</label> <br><br>
+                <label style="color: cyan;font-size: 25px;">More Info</label><br>
+                <label>ticketmaster</label> 
+            </div>
+            <div style="margin-left: 100px;">
+                <label style="color: cyan;font-size: 25px;">Quantity of Tickets to Purchase</label><br> 
+                <input></input> <br> <br> 
+                <button style="margin-left: 10px;color: white; font-size: large; background-color: darkorange;"  >Purchase</button> 
+            </div>
+        </div>
+</div> 
+
+</div> -->
+
+
+</body>
+
+</html>

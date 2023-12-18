@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Favorites </title>
+	<script src="js/favorites.js"></script>
+	<script src="js/logout.js"></script>
+	<link rel="stylesheet" href="css/favorites.css">
+</head>
+
+<body onload="favEventDetails()">
+	<div class="menu">
+		<span class="menu__left">
+			<lable>SalTickets</lable>
+		</span>
+
+		<span class="menu__right">
+			<a id="index" href="index.html">
+				Home
+			</a>
+			<a id="login" href="login.html">
+				Login/Sign Up
+			</a>
+			<a id="favorites" href="favorites.html">
+				Favorites
+			</a>
+			<a id="wallet" href="wallet.html">
+				Wallet
+			</a>
+			<a id="logout" href="index.html" onclick="logout()">
+				Logout
+			</a>
+		</span>
+	</div>
+
+	<div style="margin-top: 10px;margin-left: 100px;">
+		<label> My Favorites</label>
+	</div>
+
+	<div id="favEvents" style = "width: 800px">
+
+	</div>
+
+	<div id="favEventDetailsDiv"
+		style="display: none; margin:0 auto; margin-top: 50px; background:gray ;border-radius: 10px; width: 700px">
+		<input id="favEventID" type="hidden" name="eventID" value="">
+		<input id="favMinPrice" type="hidden" name="minPrice" value="">
+		<input id="favMaxPrice" type="hidden" name="maxPrice" value="">
+		<Span style="color: white; font-size: 30px; margin-left: 50px; font-family: Arial, Helvetica, sans-serif;">
+			<label style="margin-top: 20px;" id="favEventName"></label>
+		</Span>
+		<div style="display: flex; margin-top: 50px; margin-left: 50px">
+			<div style="display: flex">
+				<div>
+					<label
+						style="color: #00ffe2;font-size: 25px; font-family: Arial, Helvetica, sans-serif;">Date</label><br>
+					<label id="favDateValue" style="color: white;font-family: Arial, Helvetica, sans-serif;"></label> <br><br>
+					<label
+						style="color: #00ffe2;font-size: 25px;font-family: Arial, Helvetica, sans-serif;">Venue</label><br>
+					<label id="favVenueValue" style="color: white;font-family: Arial, Helvetica, sans-serif;"></label> <br><br>
+					<label style="color: #00ffe2;font-size: 25px;font-family: Arial, Helvetica, sans-serif;">Price
+						Range</label><br>
+					<label id="favPriceValue" style="color: white;font-family: Arial, Helvetica, sans-serif;"></label> <br><br>
+					<label style="color: #00ffe2;font-size: 25px;font-family: Arial, Helvetica, sans-serif;">More
+						Info</label><br>
+					<a style = "font-family: Arial, Helvetica, sans-serif;" id="favMoreInfoLink" href="">
+						Ticketmaster
+					</a>
+				</div>
+				<div style="margin-left: 100px;">
+					<label style="color: #00ffe2;font-size: 25px;font-family: Arial, Helvetica, sans-serif;">Quantity of
+						Tickets to Purchase</label><br>
+					<input type="number" id="favQuantity" name="quantity" min="0" max="500" step="1"></input> <br> <br>
+					<button type="button" id="favPurchaseButton" onclick="favPurchase()"
+						style="margin-left: 10px;color: white; font-size: large; ">PURCHASE</button>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

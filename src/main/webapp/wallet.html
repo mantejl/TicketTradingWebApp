@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Wallet </title>
+    <script src="js/wallet.js"></script>
+    <link rel="stylesheet" href="css/wallet.css">
+    <script src = "js/logout.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="walletDetails()">
+    <div class="menu">
+		<span class="menu__left">
+			<lable>SalTickets</lable>
+		</span>
+
+		<span class="menu__right">
+			<a id="index" href="index.html">
+				Home
+			</a>
+			<a id="login" href="login.html">
+				Login/Sign Up
+			</a>
+			<a id="favorites" href="favorites.html">
+				Favorites
+			</a>
+			<a id="wallet" href="wallet.html">
+				Wallet
+			</a>
+			<a id="logout" href="index.html" onclick = "logout()">
+				Logout
+			</a>
+		</span>
+	</div>
+
+    <div style="margin-top: 10px;margin-left: 500px;" id="balanceDiv">
+		<label style="font-size: x-large; font-family: Arial, Helvetica, sans-serif;"> My Wallet </label><br><br>
+		<label style="font-size: small;font-family: Arial, Helvetica, sans-serif;">Cash Balance:</label>
+		<label id="cashBalanceVal"> </label><br><br>
+		<label style="font-size: small;font-family: Arial, Helvetica, sans-serif;">Total Account Value :</label>
+		<label id="totalAccountVal"> </label>
+    </div>
+    <div id="walletDetailsDiv" style = "margin-left: 300px;">
+	
+	</div>
+</body>
+
+
+</html>

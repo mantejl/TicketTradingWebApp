@@ -1,0 +1,45 @@
+.menu 
+{
+    height: 40px;
+    color: white;            
+    background-color: #837bff;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu__left
+{
+    float: left;
+    color: white;   
+    font-family: 'Open Sans', sans-serif;      
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.menu__right
+{
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.menu__right a {
+    color: white;  
+    font-family: 'Open Sans', sans-serif;  
+            
+}
+  
+.menu a {
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+  }
+ th, td {
+    padding: 10px;
+    font-size: x-small;
+}
